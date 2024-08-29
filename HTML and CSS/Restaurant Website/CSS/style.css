@@ -1,6 +1,7 @@
 :root{
     --pale:#FFFBE6;
     --white:whitesmoke;
+    --yellowGreen:#D5ED9F;
 }
 
 body{
@@ -23,3 +24,30 @@ header a{
 }
 
 
+header{
+    display: flex;
+    padding: 1em;
+}
+
+header img{
+    height: 6vh;
+    
+}
+
+#logo{
+    flex: 3;
+    font-size: 1.5em;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+}
+
+nav a{
+    flex: 1;
+}
+
+nav a:hover{
+    color: var(--yellowGreen);
+}
