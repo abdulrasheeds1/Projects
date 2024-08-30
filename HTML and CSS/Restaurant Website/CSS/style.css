@@ -2,6 +2,9 @@
     --pale:#FFFBE6;
     --white:whitesmoke;
     --yellowGreen:#D5ED9F;
+    --green:#00712D;
+    --orange:#FF9100;
+    --skyblue:#97E7E1;
 }
 
 body{
@@ -18,15 +21,24 @@ body{
     
 }
 
+header{
+    display: flex;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+}
+
+
 header a{
     text-decoration: none;
     color: var(--pale);
 }
 
 
-header{
-    display: flex;
-    padding: 1em;
+
+#logo{
+    flex: 3;
+    font-size: 1.5em;
 }
 
 header img{
@@ -34,14 +46,10 @@ header img{
     
 }
 
-#logo{
-    flex: 3;
-    font-size: 1.5em;
-}
-
 nav{
     flex: 2;
     display: flex;
+    justify-content: space-between;
 }
 
 nav a{
@@ -51,3 +59,35 @@ nav a{
 nav a:hover{
     color: var(--yellowGreen);
 }
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 5em;
+}
+
+.tagline-1{
+    font-size: 3em;
+    font-weight: bolder;
+    text-shadow: 1px 1px black;
+    color:rgb(5, 253, 92);
+}
+
+.tagline-2{
+    color: var(--yellowGreen);
+    font-weight: bolder;
+    font-size:1.5em;
+}
+
+.main-text button{
+    width:25vw;
+    margin-top: 1em;
+    border-radius: 10px;
+    padding: .5em;
+    background-color: rgb(14, 201, 14);
+    cursor: pointer;
+    border: 1px solid black;
+}
+
