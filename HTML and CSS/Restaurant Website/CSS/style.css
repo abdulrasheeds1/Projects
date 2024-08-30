@@ -7,7 +7,7 @@
     --skyblue:#97E7E1;
 }
 
-body{
+body,h2{
     margin: 0; 
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -26,6 +26,7 @@ header{
     padding: 1em;
     position: sticky;
     top: 0;
+    background-color: black;
 }
 
 
@@ -89,5 +90,65 @@ nav a:hover{
     background-color: rgb(14, 201, 14);
     cursor: pointer;
     border: 1px solid black;
+}
+
+.menu{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
+    background:linear-gradient(to right , rgb(65, 65, 165),rgb(1, 1, 58));
+    color: var(--white);
+
+}
+
+
+#menu-heading,#location-heading{
+    background:linear-gradient(to right , rgb(65, 65, 165),rgb(1, 1, 58));
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.menu th{
+    color: beige;
+    font-weight: bolder;
+}
+
+
+table{
+    width: 100%;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+}
+
+.menu td:nth-child(1){
+    justify-self: left;
+    flex: 1;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+} 
+
+.location{
+    background:linear-gradient(to right , rgb(65, 65, 165),rgb(1, 1, 58));
+    color: var(--white);
+    padding: 1em;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.location h2{
+    color: beige;
+}
+
+.location div{
+    flex: 1;
+    min-width: 370px;
+    padding: 2em;
 }
 
