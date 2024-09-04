@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 :root{
     --spacecadet:#16325B;
     --tealblue:#227B94;
@@ -143,54 +143,4 @@ col-2 a:hover{
     max-width: 1080px;
     margin: auto;
     
-=======
-:root{
-    --spacecadet:#16325B;
-    --tealblue:#227B94;
-    --iceberg:#78B7D0;
-    --jasmine:#FFDC7F;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.container{
-    max-width: 1400px;
-    margin: auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: var(--tealblue);
-}
-
-
-.navbar{
-    display: flex;
-    align-items: center;
-    padding:10px;
-}
-
-nav{
-    flex: 1;
-    text-align: right;
-}
-
-nav ul{
-    display: inline-block;
-    list-style-type:none;
-}
-
-nav ul li{
-    display: inline-block;
-    margin-right: 20px;
-}
-
-a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-.main{
-    background: linear-gradient(to bottom, rgb(93, 92, 92),rgb(255, 255, 255));
->>>>>>> af36128eefeb78557faf82362d6280c3f37e8470
 }
