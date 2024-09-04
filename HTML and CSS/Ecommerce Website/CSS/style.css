@@ -8,18 +8,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
 }
 .container{
-    max-width: 1400px;
     margin: auto;
     padding-left: 50px;
     padding-right: 50px;
-    background-color: var(--tealblue);
+    background-color: var(--spacecadet);
 }
 
 
 .navbar{
+    max-width: 1400px;
     display: flex;
     align-items: center;
     padding:10px;
@@ -28,6 +34,7 @@
 nav{
     flex: 1;
     text-align: right;
+    
 }
 
 nav ul{
@@ -44,6 +51,95 @@ a{
     text-decoration: none;
     color: whitesmoke;
 }
+
+a:hover{
+    color:var(--jasmine);
+    transition: 0.5s;
+}
+
 .main{
-    background: linear-gradient(to bottom, rgb(93, 92, 92),rgb(255, 255, 255));
+    background: radial-gradient(whitesmoke,var(--jasmine));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 90vh;
+}
+
+.col-1,.col-2{
+    flex-basis: 50%;
+    min-width: 500px;
+}
+
+.col-1{
+    display: flex;
+    justify-content: center;
+}
+
+
+.col-1 img{
+    max-width: 100%;
+    padding: 50px 25px;
+    
+}
+
+.col-1 img:hover{
+    transition:1.5s;
+    transform:rotate(360deg);
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 70px;
+    max-width: 25px 0;
+}
+
+.col-2 button{
+    display: inline-block;
+    background-color: var(--spacecadet);
+    border:none;
+    border-radius: 30px;
+    padding: 15px 10px;
+    margin: 30px 0px; 
+}
+
+
+.col-2 button:hover{
+    background-color:var(--tealblue);
+    transition: 0.5s;
+}
+
+col-2 a:hover{
+    color:var(--jasmine);
+    transition: 0.5s;
+}
+
+.categories{
+    margin: 30px 0;;
+}
+.categories div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.col-4 img{
+    height: 220px;
+    width: 250px;;
+    border-radius: 50%;
+    background: var(--iceberg);
+}
+
+
+.col-4 img:hover{
+    transition: 1s;
+    transform:rotate(360deg);
+}
+
+.categories-main{
+    max-width: 1080px;
+    margin: auto;
+    
 }
