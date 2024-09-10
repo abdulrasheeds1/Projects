@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <div class="header">
@@ -18,14 +19,15 @@
                     <img src="./Assets/logo.png" alt="Logo" width="60px">
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="menuItems">
                         <li><a href="">Home</a></li>
                         <li><a href="">Products</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
                         <li><a href="">Account</a></li>
-                        <li><img src="./Assets/carticon.png" alt="cart-icon" height="30px" width="30px"></li>
                     </ul>
+                    <img src="./Assets/carticon.png" alt="cart-icon" height="30px" width="30px">
+                    <img src="./Assets/menu.png" alt="menu-icon" height="30px" width="30px" class="menu-icon" onclick="menuToggle()">
                 </nav>
             </div>
         </div>
@@ -58,5 +60,344 @@
             </div>
         </div>
     </div>
+
+    <div class="products">
+        <h2 class="title">Our Products</h2>
+        <div class="products-main">
+            <div class="col-5">
+                <img src="./Assets/product-1.jpg" alt="earphones">
+                <h4>Wireless Earphone</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p> &#8377; 1500</p>
+            </div>
+
+        
+
+            <div class="col-5">
+                <img src="./Assets/product-2.jpg" alt="earphones">
+                <h4>Wired Earphone</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p> &#8377; 1000</p>
+            </div>
+
+            <div class="col-5">
+                <img src="./Assets/product-3.jpg" alt="earphones">
+                <h4>Oneplus Nord</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p> &#8377; 25000</p>
+            </div>
+
+            <div class="col-5">
+                <img src="./Assets/product-4.jpg" alt="earphones">
+                <h4>Earbuds</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p> &#8377; 2000</p>
+            </div>
+
+            <div class="col-5">
+                <img src="./Assets/product-5.jpg" alt="earphones">
+                <h4>Smart Watch</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p> &#8377; 3500</p>
+            </div>
+        </div>
+
+        <!--Latest products-->
+
+        <h2 class="title">Latest Products</h2>
+        <div class="products-main">
+            <div class="col-5">
+                <img src="./Assets/product-6.jpg" alt="sony wired headphone">
+                <h4>Sony Wired Headphone(no mic)</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377; 999</p>
+            </div>
+
+            <div class="col-5">
+                <img src="./Assets/product-7.jpg" alt="sony wired headphone">
+                <h4>HP Gaming Laptop</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377; 89999</p>
+            </div>
+
+            <div class="col-5">
+                <img src="./Assets/product-8.jpg" alt="sony wired headphone">
+                <h4>Macbook</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377; 129999</p>
+            </div>
+
+            <div class="col-5">
+                <img src="./Assets/product-9.jpg" alt="sony wired headphone">
+                <h4>Gaming Keyboard and Mouse</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377; 1499</p>
+            </div>
+
+            <div class="col-5">
+                <img src="./Assets/product-10.jpg" alt="sony wired headphone">
+                <h4>Wireless Keyboard</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377; 1999</p>
+            </div>
+
+            <div class="col-5">
+                <img src="./Assets/product-11.jpg" alt="sony wired headphone">
+                <h4>Gaming Mouse</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377; 999</p>
+            </div>
+
+            <div class="col-5">
+                <img src="./Assets/product-12.jpg" alt="sony wired headphone">
+                <h4>Laptop Cooling Pad</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377; 1299</p>
+            </div>
+
+            <div class="col-5">
+                <img src="./Assets/product-13.jpg" alt="sony wired headphone">
+                <h4>Ipad</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377; 99999</p>
+            </div>
+
+            <div class="col-5">
+                <img src="./Assets/product-14.jpg" alt="sony wired headphone">
+                <h4>Gaming Headphone</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377; 2999</p>
+            </div>
+
+            <div class="col-5">
+                <img src="./Assets/product-15.jpg" alt="sony wired headphone">
+                <h4>Gaming Monitor 34inchesc</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>&#8377; 14999</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- offer -->
+
+    <div class="offer">
+        <div class="main">
+            <div class="col-1">
+                <img src="./Assets/banner-2.png" alt="banner">
+            </div>
+            <div class="col-2">
+                <p>Exclusive !!!</p>
+                <h1>Handheld Gaming Console </h1>
+                <small>
+                    ASUS ROG Ally Handheld Gaming Console (17.78cm (7")/120Hz/AMD Ryzen Z1 Extreme Processor/16GB/512GB SSD/Windows 11 Home/White) RC71L-NH001W
+                </small>
+                <br>
+                <button><a href="" >Buy Now &#8594;</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="review">
+        <div class="review-main">
+            <div class="col-3">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>The keyboard is amazing, that's what I thought until random keys just stopped working. I usually keep my setup clean</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="./Assets/user-1.jpg" alt="user-1">
+                <h3>Lucas</h3>
+            </div>
+
+            <div class="col-3">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>This product is best quality . It's appearance is looking as good as original product. Must try this product. Buy now totally worth it.</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="./Assets/user-2.jpg" alt="user-2">
+                <h3>Dustin</h3>
+            </div>
+
+            <div class="col-3">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>he price is very affordable while comparing other brands earphone. The bass needs to be lowered down so that it doesn't interrupt call quality.</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="./Assets/user-3.jpg" alt="user-3">
+                <h3>Steve</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="brands">
+        <div class="brand-menu">
+            <div class="row">
+                <div class="col-6">
+                    <img src="./Assets/brand-1.png" alt="brand-1">
+                </div>
+                <div class="col-6">
+                    <img src="./Assets/brand-2.png" alt="brand-2">
+                </div>
+                <div class="col-6">
+                    <img src="./Assets/brand-3.png" alt="brand-3">
+                </div>
+                <div class="col-6">
+                    <img src="./Assets/brand-4.png" alt="brand-4">
+                </div>
+                <div class="col-6">
+                    <img src="./Assets/brand-5.png" alt="brand-5">
+                </div>
+                <div class="col-6">
+                    <img src="./Assets/brand-6.png" alt="brand-6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App For Android and ios mobile Phone</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Follow Us on : </h3>
+                    <ul>
+                        <li><img src="./Assets/icon-1.png" alt="instagram"></li>
+                        <li><img src="./Assets/icon-2.png" alt="facebook"></li>
+                        <li><img src="./Assets/icon-3.png" alt="x"></li>
+                        <li><img src="./Assets/icon-4.png" alt="Youtube"></li>
+                        <li><img src="./Assets/icon-5.png" alt="Linkedin"></li>
+                        <li><img src="./Assets/icon-6.png" alt="telegram"></li>
+                        <li><img src="./Assets/icon-7.png" alt="whatsapp"></li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js for toggle menu -->
+    <script>
+        const menuItems=document.getElementById('menuItems');
+
+        menuItems.style.maxHeight="0px";
+
+        function menuToggle(){
+            if(menuItems.style.maxHeight=="0px"){
+                menuItems.style.maxHeight="200px";
+            }
+            else{
+                menuItems.style.maxHeight="0px";
+            }
+
+        }
+    </script>
 </body>
 </html>
