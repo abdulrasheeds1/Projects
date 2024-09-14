@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Prodcuts - Gadget Kingdom</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="./Assets/page-Icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./Assets/logo.png" alt="Logo" width="60px">
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                    <img src="./Assets/carticon.png" alt="cart-icon" height="30px" width="30px">
+                    <img src="./Assets/menu.png" alt="menu-icon" height="30px" width="30px" class="menu-icon" onclick="menuToggle()">
+                </nav>
+            </div>
+        </div>
+        <!-- cart details -->
+         <div class="products cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./Assets/product-1.jpg" alt="">
+                            <div>
+                                <p>product name</p>
+                                <small>&#8377; 1500</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>&#8377; 1500</td>
+                </tr>
+            </table>
+         </div>
+
+         <div class="total-price">
+            <table>
+                <tr>
+                    <td>subtotal</td>
+                    <td>&#8377; 1500</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>&#8377; 100</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>&#8377; 1600</td>
+                </tr>
+            </table>
+         </div>
+      <!-- footer -->
+
+      <div class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App For Android and ios mobile Phone</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Follow Us on : </h3>
+                    <ul>
+                        <li><img src="./Assets/icon-1.png" alt="instagram"><a href=""></a></li>
+                        <li><img src="./Assets/icon-2.png" alt="facebook"><a href=""></a></li>
+                        <li><img src="./Assets/icon-3.png" alt="x"><a href=""></a></li>
+                        <li><img src="./Assets/icon-4.png" alt="Youtube"><a href=""></a></li>
+                        <li><img src="./Assets/icon-5.png" alt="Linkedin"><a href=""></a></li>
+                        <li><img src="./Assets/icon-6.png" alt="telegram"><a href=""></a></li>
+                        <li><img src="./Assets/icon-7.png" alt="whatsapp"><a href=""></a></li>
+                    </ul>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js for toggle menu -->
+    <script>
+        const menuItems=document.getElementById('menuItems');
+
+        menuItems.style.maxHeight="0px";
+
+        function menuToggle(){
+            if(menuItems.style.maxHeight=="0px"){
+                menuItems.style.maxHeight="200px";
+            }
+            else{
+                menuItems.style.maxHeight="0px";
+            }
+
+        }
+    </script>
+</body>
+</html>
