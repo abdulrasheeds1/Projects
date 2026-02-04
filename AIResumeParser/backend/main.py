@@ -17,7 +17,7 @@ def extract_text_from_pdf(pdf_file_path):
 
 # --- Execution ---
 # Replace 'my_resume.pdf' with your actual file name
-filename = 'sampleResume\Personal-trainer-resume-example-3.pdf'
+filename = 'AIResumeParser\sampleResume\Personal-trainer-resume-example-3.pdf'
 resume_content = extract_text_from_pdf(filename)
 
 print("--- Successfully Extracted Text ---")
