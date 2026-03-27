@@ -1,0 +1,128 @@
+:root{
+    --JapaneseIndigo:#27374D;
+    --DarkElectricBlue:#526D82;
+    --CadetBlue :#9DB2BF;
+    --AzureishWhite:#DDE6ED;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.obj-width{
+    max-width:1200px;
+    margin: auto;
+}
+
+nav{
+    background-color: var(--JapaneseIndigo);
+    box-shadow: 0 10px 30px rgb(0, 0, 0,0.2);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 0; 
+}
+
+.navbar .logo{
+    color: var(--AzureishWhite);
+    text-decoration: none;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+
+#search-input{
+   max-width: 400px;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   font-size: 20px;
+   color: var(--JapaneseIndigo);
+}
+
+#search-button{
+    padding: 10px 20px;
+    background-color: var(--DarkElectricBlue);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: var(--AzureishWhite);
+    cursor: pointer;
+}
+
+.categories{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 20px 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.categories label{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--JapaneseIndigo);
+}
+#category{
+    margin-left: 20px;
+    padding: 10px 20px;
+    color: #526D82;
+
+}
+#blog-container{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-wrap: wrap;
+}
+
+.blog-card{
+    width: 280px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 1rem;
+}
+
+.blog-card:hover{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transform:translateY(-10px);
+    transition: 1s;
+}
+
+.blog-card img{
+    width: 100%;
+    height: 280px;
+    object-fit:cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.blog-card h2{
+    color: var(--DarkElectricBlue);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.blog-card p{
+    color: var(--JapaneseIndigo);
+    font-size: 20px;
+    padding-top: 16px;
+}
+
+@media screen and (max-width:500px) {
+    #search-input {
+        width: 200px;
+    }
+
+    .blog-card{
+        width: 100vw;
+    }
+}

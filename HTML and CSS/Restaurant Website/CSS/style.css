@@ -1,0 +1,162 @@
+:root{
+    --pale:#FFFBE6;
+    --white:whitesmoke;
+    --yellowGreen:#D5ED9F;
+    --green:#00712D;
+    --orange:#FF9100;
+    --skyblue:#97E7E1;
+}
+
+body,h2{
+    margin: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing{
+    background-image:url('../Assets/FoodImage-1.jpg');
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+    color:var(--white);
+    
+}
+
+header{
+    display: flex;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    
+}
+
+
+header a{
+    text-decoration: none;
+    color: var(--pale);
+    min-width: 120px;
+}
+
+#logo{
+    flex: 3;
+    font-size: 1.5em;
+}
+
+header img{
+    height: 6vh;
+    
+}
+
+nav{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    flex: 1;
+}
+
+nav a:hover{
+    color: var(--yellowGreen);
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 5em;
+}
+
+.tagline-1{
+    font-size: 3em;
+    font-weight: bolder;
+    text-shadow: 1px 1px black;
+    color:rgb(5, 253, 92);
+}
+
+.tagline-2{
+    color: var(--yellowGreen);
+    font-weight: bolder;
+    font-size:1.5em;
+}
+
+.main-text button{
+    width:25vw;
+    margin-top: 1em;
+    border-radius: 10px;
+    padding: .5em;
+    background-color: rgb(14, 201, 14);
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.menu{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
+    background:linear-gradient(to right , rgb(65, 65, 165),rgb(1, 1, 58));
+    color: var(--white);
+
+}
+
+
+#menu-heading,#location-heading{
+    background:linear-gradient(to right , rgb(65, 65, 165),rgb(1, 1, 58));
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.menu th{
+    color: beige;
+    font-weight: bolder;
+}
+
+
+table{
+    width: 100%;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    padding: .5em;
+}
+
+.menu td:nth-child(1){
+    justify-self: left;
+    flex: 1;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+} 
+
+.location{
+    background:linear-gradient(to right , rgb(65, 65, 165),rgb(1, 1, 58));
+    color: var(--white);
+    padding: 1em;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.location h2{
+    color: beige;
+}
+
+.location div{
+    flex: 1;
+    min-width: 370px;
+    padding: 2em;
+}
+
+#copyright{
+    background-color: black;
+    padding: 1em 2em;
+    color: var(--yellowGreen);
+}
